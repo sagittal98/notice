@@ -15,13 +15,13 @@ Successfully set up the distributed aggregation project.
 
 3. cognition zookeeper
 
-4. study liunx server
+4. study linux server
 
-5. liunx server install JDK
+5. linux server install JDK
 
-6. liunx set up zookeeper
+6. linux set up zookeeper
 
-7. liunx set up Tomcat
+7. linux set up Tomcat
 
 8. deploy zookeeper management center
 
