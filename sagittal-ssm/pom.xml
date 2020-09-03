@@ -15,26 +15,189 @@
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
+    <!-- 单元测试 -->
+    <junit.version>4.11</junit.version>
+    <!-- 实现slf4j接口并整合 -->
+    <logback.version>1.1.1</logback.version>
+    <!-- 2.数据库 -->
+    <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
+    <druid.version>1.1.10</druid.version>
+    <!-- DAO: MyBatis -->
+    <mybatis.version>3.4.6</mybatis.version>
+    <mybatis-spring.version>2.0.5</mybatis-spring.version>
+    <!-- 3.Servlet web -->
+    <standard.version>1.1.2</standard.version>
+    <jstl.version>1.2</jstl.version>
+    <jackson-databind.version>2.10.2</jackson-databind.version>
+    <javax.servlet-api.version>3.1.0</javax.servlet-api.version>
+    <!-- 4.Spring -->
+    <spring.version>4.3.25.RELEASE</spring.version>
+    <!-- redis客户端:redis -->
+    <jedis.version>2.9.1</jedis.version>
+    <!-- get set 工具-->
+    <lombok.version>1.18.12</lombok.version>
   </properties>
 
   <dependencies>
+    <!-- 单元测试 -->
     <dependency>
       <groupId>junit</groupId>
       <artifactId>junit</artifactId>
-      <version>4.13</version>
+      <version>${junit.version}</version>
       <scope>test</scope>
+    </dependency>
+
+    <!-- 1.日志 -->
+    <!-- 实现slf4j接口并整合 -->
+    <dependency>
+      <groupId>ch.qos.logback</groupId>
+      <artifactId>logback-classic</artifactId>
+      <version>${logback.version}</version>
+    </dependency>
+
+    <!-- 2.数据库 -->
+    <dependency>
+      <groupId>mysql</groupId>
+      <artifactId>mysql-connector-java</artifactId>
+      <scope>runtime</scope>
+      <version>${mysql-connector-java.version}</version>
+    </dependency>
+<!--    <dependency>-->
+<!--      <groupId>com.alibaba</groupId>-->
+<!--      <artifactId>druid</artifactId>-->
+<!--      <version>${druid.version}</version>-->
+<!--    </dependency>-->
+
+    <dependency>
+      <groupId>com.alibaba</groupId>
+      <artifactId>druid</artifactId>
+      <version>1.1.10</version>
+    </dependency>
+
+
+
+    <!-- DAO: MyBatis -->
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis</artifactId>
+      <version>${mybatis.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.mybatis</groupId>
+      <artifactId>mybatis-spring</artifactId>
+      <version>${mybatis-spring.version}</version>
+    </dependency>
+
+    <!-- 3.Servlet web -->
+    <dependency>
+      <groupId>taglibs</groupId>
+      <artifactId>standard</artifactId>
+      <version>${standard.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet.jsp.jstl</groupId>
+      <artifactId>jstl-api</artifactId>
+      <version>${jstl.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>com.fasterxml.jackson.core</groupId>
+      <artifactId>jackson-databind</artifactId>
+      <version>${jackson-databind.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>javax.servlet</groupId>
+      <artifactId>javax.servlet-api</artifactId>
+      <version>${javax.servlet-api.version}</version>
+    </dependency>
+
+    <!-- 4.Spring -->
+    <!-- 1)Spring核心 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-core</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-beans</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-context</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- 2)Spring DAO层 -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-jdbc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-tx</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- 3)Spring web -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-web</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-webmvc</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+    <!-- 4)Spring test -->
+    <dependency>
+      <groupId>org.springframework</groupId>
+      <artifactId>spring-test</artifactId>
+      <version>${spring.version}</version>
+    </dependency>
+
+    <!-- redis客户端:redis -->
+    <!-- https://mvnrepository.com/artifact/redis.clients/jedis -->
+    <dependency>
+      <groupId>redis.clients</groupId>
+      <artifactId>jedis</artifactId>
+      <version>${jedis.version}</version>
+    </dependency>
+
+<!--    <dependency>-->
+<!--      <groupId>com.dyuproject.protostuff</groupId>-->
+<!--      <artifactId>protostuff-core</artifactId>-->
+<!--      <version>1.0.8</version>-->
+<!--    </dependency>-->
+<!--    <dependency>-->
+<!--      <groupId>com.dyuproject.protostuff</groupId>-->
+<!--      <artifactId>protostuff-runtime</artifactId>-->
+<!--      <version>1.0.8</version>-->
+<!--    </dependency>-->
+
+    <!-- Map工具类 -->
+<!--    <dependency>-->
+<!--      <groupId>commons-collections</groupId>-->
+<!--      <artifactId>commons-collections</artifactId>-->
+<!--      <version>3.2</version>-->
+<!--    </dependency>-->
+
+
+    <!-- get set 工具-->
+    <dependency>
+      <groupId>org.projectlombok</groupId>
+      <artifactId>lombok</artifactId>
+      <version>${lombok.version}</version>
+      <scope>provided</scope>
     </dependency>
   </dependencies>
 
   <build>
-    <pluginManagement><!-- lock down plugins versions to avoid using Maven defaults (may be moved to parent pom) -->
       <plugins>
-        <!-- clean lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#clean_Lifecycle -->
         <plugin>
           <artifactId>maven-clean-plugin</artifactId>
           <version>3.1.0</version>
         </plugin>
-        <!-- default lifecycle, jar packaging: see https://maven.apache.org/ref/current/maven-core/default-bindings.html#Plugin_bindings_for_jar_packaging -->
         <plugin>
           <artifactId>maven-resources-plugin</artifactId>
           <version>3.0.2</version>
@@ -59,7 +222,6 @@
           <artifactId>maven-deploy-plugin</artifactId>
           <version>2.8.2</version>
         </plugin>
-        <!-- site lifecycle, see https://maven.apache.org/ref/current/maven-core/lifecycles.html#site_Lifecycle -->
         <plugin>
           <artifactId>maven-site-plugin</artifactId>
           <version>3.7.1</version>
@@ -69,6 +231,5 @@
           <version>3.0.0</version>
         </plugin>
       </plugins>
-    </pluginManagement>
   </build>
 </project>
