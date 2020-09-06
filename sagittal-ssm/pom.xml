@@ -21,7 +21,7 @@
     <logback.version>1.1.1</logback.version>
     <!-- 2.数据库 -->
     <mysql-connector-java.version>5.1.38</mysql-connector-java.version>
-    <druid.version>1.1.10</druid.version>
+    <druid.version>1.1.1</druid.version>
     <!-- DAO: MyBatis -->
     <mybatis.version>3.4.6</mybatis.version>
     <mybatis-spring.version>2.0.5</mybatis-spring.version>
@@ -233,6 +233,7 @@
           <artifactId>maven-project-info-reports-plugin</artifactId>
           <version>3.0.0</version>
         </plugin>
+
       </plugins>
   </build>
 </project>

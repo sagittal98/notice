@@ -9,6 +9,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.test.context.ContextConfiguration;
 import org.springframework.test.context.junit4.SpringJUnit4ClassRunner;
 
+import java.util.Arrays;
+import java.util.List;
+
 /**
  * 配置spring和junit整合，junit启动时加载springIOC容器 spring-test,junit
  */
@@ -27,4 +30,11 @@ public class BaseTest {
         Book book = bookDao.queryById(bookId);
         System.out.println(book);
     }
+
+    @Test
+    public void findAll(){
+        List<Book> books = bookDao.queryAll(0, 5);
+        System.out.println(Arrays.toString(books.toArray()));
+    }
+
 }
