@@ -27,10 +27,10 @@ public class BookController {
     @RequestMapping("/findAll")
     @ResponseBody
     public List<Book> findAll(HttpServletRequest request, HttpServletResponse response) throws UnsupportedEncodingException {
-        // 字符集utf-8
-        request.setCharacterEncoding("UTF-8");
-        // 前端请求头设置，所有请求头都可以访问
-        response.setHeader("Access-Control-Allow-Origin","*");
+//        // 字符集utf-8
+//        request.setCharacterEncoding("UTF-8");
+//        // 前端请求头设置，所有请求头都可以访问
+//        response.setHeader("Access-Control-Allow-Origin","*");
         System.out.println("here!");
         List<Book> all = bookService.findAll();
         System.out.println(Arrays.toString(all.toArray()));
