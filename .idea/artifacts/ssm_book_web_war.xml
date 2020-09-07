@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="ssm-book-web:war">
+    <output-path>$PROJECT_DIR$/ssm-book-web/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>ssm-book-web</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="ssm-book-web.war">
+      <element id="artifact" artifact-name="ssm-book-web:war exploded" />
+    </root>
+  </artifact>
+</component>

@@ -2,7 +2,14 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/sagittal-generator/sagittal-generator.iml" filepath="$PROJECT_DIR$/sagittal-generator/sagittal-generator.iml" />
       <module fileurl="file://$PROJECT_DIR$/sagittal-ssm/sagittal-ssm.iml" filepath="$PROJECT_DIR$/sagittal-ssm/sagittal-ssm.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-book-interface/ssm-book-interface.iml" filepath="$PROJECT_DIR$/ssm-book-interface/ssm-book-interface.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-book-service/ssm-book-service.iml" filepath="$PROJECT_DIR$/ssm-book-service/ssm-book-service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-book-web/ssm-book-web.iml" filepath="$PROJECT_DIR$/ssm-book-web/ssm-book-web.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-dao/ssm-dao.iml" filepath="$PROJECT_DIR$/ssm-dao/ssm-dao.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-parent/ssm-parent.iml" filepath="$PROJECT_DIR$/ssm-parent/ssm-parent.iml" />
+      <module fileurl="file://$PROJECT_DIR$/ssm-pojo/ssm-pojo.iml" filepath="$PROJECT_DIR$/ssm-pojo/ssm-pojo.iml" />
     </modules>
   </component>
 </project>

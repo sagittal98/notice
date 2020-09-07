@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+  xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+  <modelVersion>4.0.0</modelVersion>
+
+  <artifactId>ssm-book-interface</artifactId>
+  <version>0.0.1-SNAPSHOT</version>
+
+  <parent>
+    <groupId>com.sagittal</groupId>
+    <artifactId>ssm-parent</artifactId>
+    <version>0.0.1-SNAPSHOT</version>
+    <relativePath>../ssm-parent/pom.xml</relativePath>
+  </parent>
+
+  <packaging>jar</packaging>
+
+  <name>ssm-book-interface</name>
+
+  <dependencies>
+<!--    引入实体类-->
+    <dependency>
+      <groupId>com.sagittal</groupId>
+      <artifactId>ssm-pojo</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+<!--    引入dao接口-->
+    <dependency>
+      <groupId>com.sagittal</groupId>
+      <artifactId>ssm-dao</artifactId>
+      <version>0.0.1-SNAPSHOT</version>
+    </dependency>
+
+  </dependencies>
+
+</project>

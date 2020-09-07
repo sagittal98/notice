@@ -6,12 +6,30 @@
         <sourceOutputDir name="target/generated-sources/annotations" />
         <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
         <outputRelativeToContentRoot value="true" />
+        <module name="ssm-dao" />
+        <module name="ssm-book-service" />
+        <module name="ssm-book-interface" />
+        <module name="ssm-book-web" />
+        <module name="ssm-pojo" />
+        <module name="sagittal-generator" />
         <module name="sagittal-ssm" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
       <module name="notice-ssm" target="1.5" />
+      <module name="sagittal-generator" target="1.8" />
       <module name="sagittal-ssm" target="1.8" />
+      <module name="ssm-book-interface" target="1.8" />
+      <module name="ssm-book-service" target="1.8" />
+      <module name="ssm-book-web" target="1.8" />
+      <module name="ssm-dao" target="1.8" />
+      <module name="ssm-parent" target="1.8" />
+      <module name="ssm-pojo" target="1.8" />
     </bytecodeTargetLevel>
+  </component>
+  <component name="JavacSettings">
+    <option name="ADDITIONAL_OPTIONS_OVERRIDE">
+      <module name="sagittal-generator" options="-parameters" />
+    </option>
   </component>
 </project>

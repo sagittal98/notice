@@ -2,11 +2,21 @@
 <project version="4">
   <component name="FrameworkDetectionExcludesConfiguration">
     <file type="web" url="file://$PROJECT_DIR$/sagittal-ssm" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm-book-interface" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm-book-service" />
+    <file type="web" url="file://$PROJECT_DIR$/ssm-book-web" />
   </component>
   <component name="MavenProjectsManager">
     <option name="originalFiles">
       <list>
         <option value="$PROJECT_DIR$/sagittal-ssm/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-parent/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-pojo/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-dao/pom.xml" />
+        <option value="$PROJECT_DIR$/sagittal-generator/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-book-interface/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-book-service/pom.xml" />
+        <option value="$PROJECT_DIR$/ssm-book-web/pom.xml" />
       </list>
     </option>
   </component>
