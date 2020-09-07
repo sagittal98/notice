@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="sagittal-ssm:war">
+    <output-path>$PROJECT_DIR$/sagittal-ssm/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>sagittal-ssm</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="sagittal-ssm-0.0.1-SNAPSHOT.war">
+      <element id="artifact" artifact-name="sagittal-ssm:war exploded" />
+    </root>
+  </artifact>
+</component>

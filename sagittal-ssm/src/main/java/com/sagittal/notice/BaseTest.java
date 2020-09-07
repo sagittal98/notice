@@ -3,6 +3,7 @@ package com.sagittal.notice;
 
 import com.sagittal.notice.dao.BookDao;
 import com.sagittal.notice.pojo.Book;
+import com.sagittal.notice.service.BookService;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.springframework.beans.factory.annotation.Autowired;
@@ -17,12 +18,14 @@ import java.util.List;
  */
 @RunWith(SpringJUnit4ClassRunner.class)
 // 告诉junit spring配置文件
-@ContextConfiguration({"classpath:spring/spring-dao.xml"})
+@ContextConfiguration({"classpath:spring/spring-*.xml"})
 public class BaseTest {
 
 
     @Autowired
     private BookDao bookDao;
+    @Autowired
+    private BookService bookService;
 
     @Test
     public void testQueryById(){
@@ -33,7 +36,7 @@ public class BaseTest {
 
     @Test
     public void findAll(){
-        List<Book> books = bookDao.queryAll(0, 5);
+        List<Book> books = bookService.findAll();
         System.out.println(Arrays.toString(books.toArray()));
     }
 
